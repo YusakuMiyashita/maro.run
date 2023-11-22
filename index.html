@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>html/CSSの学習</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-    html,body,.container {
-        width: 100%;
-        height: 100%;
+    html, body, .container {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    border:0;
     }
 
     .container,
     .overlay:before {
-    background: url(https://drive.google.com/uc?export=view&id=1v9lE6iutIDW-pjOTQm6ykp4ilUYd6jgt) no-repeat fixed 0 0 / cover;
+        background: url(NIKEZoomFLY5.jpg) no-repeat fixed 50% 50% / cover;
     }
-
     .container {
         align-items: center;
         display: flex;
         justify-content: center;
     }
-
     .overlay {
         max-height: 200px;
         margin: 0 auto;
         max-width: 768px;
         overflow: hidden;
-        padding: 50px;
+        padding: 25px;
         position: relative;
         color: white;
         font-family: 'Lato';
-        position: relative;
+        position: fixed;
         text-align: center;
         z-index: 0;
         &:before {
             content: '';
             filter: blur(20px);
             height: 100%;
-            left: 0;
+            right: 0;
             position: absolute;
-            top: 0;
+            bottom: 0;
             width: 100%;
             z-index: -1;
         }
@@ -46,15 +48,14 @@
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="overlay">
-        <h1>Displined ones are FREE in life.</h1>
-        <p style="text-align: right">by Kipchoge</p>
-        <p>あなたにとって自由とは何ですか?</p>
-        <p></p>
-        <p>真の自由とは何たるか今一度問いたい</p>
-        
+    <div class="container">
+        <div class="overlay">
+            <h1>Displined ones are FREE in life.</h1>
+            <p style="text-align: right">By Eliud Kipchoge</p>
+            <p>あぁ、自由になりたい<br>そう思ったことはないだろうか</p>
+        </div>
     </div>
-</div>
 </body>
 </html>
+
+
